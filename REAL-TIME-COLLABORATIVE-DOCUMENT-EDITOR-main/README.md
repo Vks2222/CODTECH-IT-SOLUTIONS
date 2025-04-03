@@ -1,10 +1,10 @@
 # REAL-TIME-COLLABORATIVE-DOCUMENT-EDITOR
 
-Name :  Akash Subodh Maji
+Name :  Vipin Kumar Singh
 
 Company : CODTECH IT SOLUTIONS 
 
-Id : CT12WNIK
+Id : CT12WNHH
 
 Domain : Full Stack Web Development 
 
