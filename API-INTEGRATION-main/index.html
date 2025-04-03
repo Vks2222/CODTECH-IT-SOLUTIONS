@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WEATHER FORECAST</h1>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Voice Search -->
+            <button id="voiceSearch" aria-label="Voice Search" onclick="startVoiceSearch()">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.M6ZFiVA0TWn7vtISa1o0IwAAAA&pid=Api&P=0&h=180" id="myimg" alt="Voice Search Icon">
+            </button>
+
+            <!-- Input for City -->
+            <input type="text" id="cityInput" placeholder="Enter city name" aria-label="Enter city name"><br>
+            <button id="getWeather">Get Weather</button>
+            <button id="useLocation">Use My Location</button> <!-- Location-based Weather -->
+
+            <div id="weatherDisplay"></div>
+            <div id="weatherIcon"></div> <!-- Weather Icon Display -->
+        </div>
+        
+        <!-- Hourly Weather Updates -->
+        <div id="hourlyWeather" class="forecast-container"></div>
+
+        <!-- Weekly Weather Updates -->
+        <div id="weeklyWeather" class="forecast-container"></div>
+
+    </main>
+    <footer>
+        <div id="updateTime"></div> <!-- Time the data was last fetched -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

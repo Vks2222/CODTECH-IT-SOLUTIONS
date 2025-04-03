@@ -1,0 +1,126 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: hsl(180, 100%, 50%);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: mediumpurple;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 0;
+}
+
+/* Main container styles */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Ensures the main section takes up the remaining space */
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+#myimg {
+    width: 25px;
+    height: 25px;
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#weatherDisplay, #weatherIcon {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Hourly and Weekly Forecast Styles */
+.forecast-container {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.forecast-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 150px;
+    text-align: center;
+}
+
+.forecast-box p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.forecast-box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#hourlyWeather h3, #weeklyWeather h3 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: mediumpurple;
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+}
