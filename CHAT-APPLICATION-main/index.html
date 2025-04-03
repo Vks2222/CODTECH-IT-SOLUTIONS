@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chat-container">
+        <h2>Real-Time Chat</h2><hr>
+
+        <div id="messages"></div>
+
+        <div id="input-container">
+            <input type="text" id="message-input" placeholder="Text message">
+            <button id="send-btn">
+                <img src="https://img.icons8.com/?size=100&id=85971&format=png&color=228BE6" id="myimg1" >
+            </button>
+            <button id="voice-btn">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.M6ZFiVA0TWn7vtISa1o0IwAAAA&pid=Api&P=0&h=180" id="myimg" >
+            </button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
